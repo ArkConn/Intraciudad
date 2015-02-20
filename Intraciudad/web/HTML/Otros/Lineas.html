@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Intraciudad | Metro</title>
+        <link rel="icon" type="image/jpg" href="../../Imagenes/favicon.ico">
+        <link rel="Stylesheet" href="../../CSS/CSS.css">        
+        <link rel="Stylesheet"  media="(min-width: 995px)" href="../../CSS/Barra.css">     
+        <link rel="Stylesheet"  media="(max-width: 995px)" href="CSS/BarraR.css">   
+        <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+        <script type="text/javascript" src="CSS/Fondo.js"></script>               
+        <script type="text/javascript" src="CSS/actions.js"></script>    
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>        
+    </head>
+    <body onload="adjust();" onresize="adjust()">       
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../../index.html" target="_self">
+                        <span class="primero">
+                            <i class="icon icon-casita"></i>
+                        </span>
+                        Inicio
+                    </a>
+                </li>                
+                <li>
+                    <a>
+                        <span class="segundo">
+                            <i class="icon icon-metro-logo">                                
+                            </i>
+                        </span>Metro</a>
+                  <ul>
+                        <li><a href="Mapa.html" target="_self">Mapa</a></li>                       
+                        <li><a href="Lineas.html" target="_self" >Líneas</a></li>                       
+                        <li><a href="Otros.html" target="_self">Otros Servicios</a></li>
+                        <li><a href="Info.html" target="_self">Información</a></li> 
+                        <li><a href="http://www.metro.df.gob.mx/" target="_blank">Sitio</a></li>
+                    </ul>
+                </li>
+                <li><a><span class="tercero"><i class="icon icon-Metrobus_Mexico"></i></span>Metrobus</a>
+                     <ul>
+                        <li><a href="../MB/Mapa.html" target="_self">Mapa de la red</a></li>
+                        <li><a href="../MB/Linea1.html" target="_self">Línea 1</a></li>
+                        <li><a href="../MB/Linea2.html" target="_self">Línea 2</a></li>
+                        <li><a href="../MB/Linea3.html" target="_self">Línea 3</a></li>
+                        <li><a href="../MB/Linea4.html" target="_self">Línea 4</a></li>
+                        <li><a href="../MB/Linea5.html" target="_self">Línea 5</a></li>
+                        <li><a href="../MB/Info.html" target="_self">Información</a></li>
+                        <li><a href="http://www.metrobus.df.gob.mx/" target="_blank">Sitio</a></li> 
+                     </ul>
+                </li>
+                <li><a ><span class="cuarto"><i class="icon icon-STE_logo"></i></span>Tren Ligero</a>
+                    <ul>
+                        <li><a href="../STE/Linea.html" target="_self">Línea 1</a></li>                       
+                        <li><a href="../STE/Info.html" target="_self">Información</a></li>
+                        <li><a href="http://www.ste.df.gob.mx/index.html?page=1&content=3" target="_blank">Sitio</a></li> 
+                    </ul>
+                </li>
+                <li>
+                    <a ><span class="quinto"><i class="icon icon-logosuburbano"></i></span>Tren Suburbano</a>
+                    <ul>                        
+                        <li><a href="../TS/Linea.html" target="_self">Línea 1</a></li>
+                        <li><a href="../TS/Info.html" target="_self">Información</a></li>
+                        <li><a href="http://www.fsuburbanos.com/" target="_blank">Sitio</a></li> 
+                    </ul>
+                </li>
+                <li>
+                    <a ><span class="sexto"><i class="icon icon-cero_emisiones"></i></span>Cero Emisiones</a>
+                    <ul>                        
+                        <li><a href="../Trole/Linea.html" target="_self">Líneas</a></li>
+                        <li><a href="../Trole/Info.html" target="_self">Información</a></li>
+                        <li><a href="http://www.ste.df.gob.mx/index.html?page=1&content=2" target="_blank">Sitio</a></li> 
+                    </ul>
+                </li>
+                <li>
+                    <a ><span class="siete"><i class="icon icon-Where-Is-My-Car-logo-on-mevvy"></i></span>Corredor</a>
+                    <ul>                        
+                        <li><a href="../Corr/Ruta1.html" target="_self">Ruta 1</a></li>
+                        <li><a href="../Corr/Ruta2.html" target="_self">Ruta 2</a></li>
+                        <li><a href="../Corr/Ruta3.html" target="_self">Ruta 3</a></li>
+                    </ul>
+                </li>   
+                <li>
+                    <a ><span class="ocho"><i class="icon icon-edificio"></i></span>CETRAM</a>
+                    <ul>                        
+                        <li><a href="../CET/Linea.html" target="_self">Mapa de CETRAM</a></li>
+                        <li><a href="../CET/Info.html" target="_self">Información</a></li>
+                        <li><a href="http://www.cetram.df.gob.mx/" target="_blank">Sitio</a></li> 
+                    </ul>
+                </li>
+                <li>
+                    <a ><span class="nueve"><i class="icon icon-cog-cogwheel-gear-zahnrad-hi"></i></span>Más servicios</a>
+                    <ul>                        
+                        <li><a href="../Eco/Linea.html" target="_self">Ecobici</a></li>
+                        <li><a href="../Otros/Reporte.html" target="_self">Reporte de Tránsito</a></li>                        
+                        <li><a href="../Otros/Lugares.html" target="_self">Lugares Concurridos</a></li>
+                        <li><a href="../Otros/Manual.html" target="_self">Manual</a></li>
+                        <li><a href="../Otros/Ask.html" target="_self">Preguntas Frecuentes</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>           
+         <img src="../../Imagenes/logo.png" id="fondo" /><A NAME="Arriba"></A>
+         
+         <div id="MenuBar">				
+			<a href="HTML/Opciones/Metro.html" target="_self"><div class="option">
+				Metro
+			</div></a>
+            <a href="HTML/Opciones/Metrobus.html" target="_self"><div class="option">
+				Metrobus
+			</div></a>
+            <a href="HTML/Opciones/TL.html" target="_self"><div class="option">
+				Tren Ligero
+			</div></a>
+            <a href="HTML/Opciones/TS.html" target="_self"><div class="option">
+				Tren Suburbano
+			</div></a>
+            <a href="HTML/Opciones/Cero.html" target="_self"><div class="option">
+				Cero Emisiones
+			</div></a>
+            <a href="HTML/Opciones/Run.html" target="_self"><div class="option">
+				Corredor
+			</div></a>
+            <a href="HTML/Opciones/CET.html" target="_self"><div class="option">
+				CETRAM
+			</div></a>
+            <a href="HTML/Opciones/Mas.html" target="_self"><div class="option">
+				Más
+			</div></a>                        
+		</div>
+ 
+        
+        <div id="Index-STC">  
+            
+            <div id="NavigationBar">
+				<div id="icon">
+					<input type="button" value="j" id="iconButton" onclick="sMenu()">
+				</div>
+				<div id="title">			
+					<h1>Lineas Metro</h1>
+				</div>
+			</div>
+            
+            
+             <div class="center" id="wwm2">
+                    <a href="" targer="_self"><div class="linea" id="L1">
+                         <img src="../../Imagenes/1.png" id="ImgMetro" class="">
+                         
+                         <img src="../../Imagenes/1-2.png" id="ImgMetro" class="">
+                         <img src="../../Imagenes/1-1.png" id="ImgMetro" class="">
+                         
+                         <div id="textoM">
+                            <p id="line" style="text-align: center">Linea 1: <br/><br/><br/></p>
+                                 <p style="text-align: center">PANTITLÁN - OBSERVATORIO</p>
+                         </div>
+                        </div></a>
+                    <a href="" targer="_self"><div class="linea" id="L2">
+                         <img src="../../Imagenes/2.png" id="ImgMetro" class="">
+                         
+                         <img src="../../Imagenes/2-1.png" id="ImgMetro" class="">
+                         <img src="../../Imagenes/2-2.png" id="ImgMetro" class="">
+                         <div id="textoM" style="text-align: center">
+                             <p id="line">Linea 2:<br/><br/><br/></p>
+                                 <p style="text-align: center">TASQUEÑA - CUATRO CAMINOS</p>
+                         </div>
+                     </div></a>
+                     <a href="" targer="_self"><div class="linea" id="L3">
+                         <img src="../../Imagenes/3.png" id="ImgMetro" class="">
+                         
+                         <img src="../../Imagenes/3-1.png" id="ImgMetro" class="">
+                         <img src="../../Imagenes/3-2.png" id="ImgMetro" class="">
+                         <div id="textoM">
+   
+                             <p id="line" style="text-align: center">Linea 3: <br/><br/><br/></p>                             
+                             <p style="text-align: center">INDIOS VERDES - UNIVERSIDAD</p>
+                         </div>
+                     </div></a>
+                     <a href="" targer="_self"><div class="linea" id="L4">
+                         <img src="../../Imagenes/4.png" id="ImgMetro" class="">
+                         
+                         <img src="../../Imagenes/4-1.png" id="ImgMetro" class="">
+                         <img src="../../Imagenes/4-2.png" id="ImgMetro" class="">
+                         <div id="textoM">
+                             <p id="line" style="text-align: center">Linea 4: <br/><br/><br/></p>
+                             <p style="text-align: center">    MARTIN CARRERA - SANTA ANITA</p>
+                         </div>
+                     </div></a>
+                     <a href="" targer="_self"><div class="linea" id="L5">
+                         <img src="../../Imagenes/5.png" id="ImgMetro" class="">
+                         
+                         <img src="../../Imagenes/5-1.png" id="ImgMetro" class="">
+                         <img src="../../Imagenes/5-2.png" id="ImgMetro" class="">
+                         <div id="textoM">
+                             <p id="line" style="text-align: center; color: #000;">Linea 5: <br/><br/><br/></p>
+                              <p style="text-align: center; color: #000;">   PANTITLÁN - POLITÉCNICO</p>
+                         </div>
+                     </div></a>
+                     <a href="" targer="_self"><div class="linea" id="L6">
+                         <img src="../../Imagenes/6.png" id="ImgMetro" class="">
+                         
+                         <img src="../../Imagenes/6-2.png" id="ImgMetro" class="">
+                         <img src="../../Imagenes/6-1.png" id="ImgMetro" class="">
+                         <div id="textoM" style="text-align: center">
+                             <p id="line">Linea 6: <br/><br/><br/></p>
+                              <p style="text-align: center">   EL ROSARIO - MARTIN CARRERA</p>
+                         </div>
+                     </div></a>
+                     <a href="" targer="_self"><div class="linea" id="L7">
+                         <img src="../../Imagenes/7.png" id="ImgMetro" class="">
+                         
+                         <img src="../../Imagenes/7-1.png" id="ImgMetro" class="">
+                         <img src="../../Imagenes/7-2.png" id="ImgMetro" class="">
+                         <div id="textoM" style="text-align: center">
+                            <p id="line">Linea 7:<br/><br/><br/></p> 
+                               <p style="text-align: center">   EL ROSARIO - BARRANCA DEL MUERTO</p>
+                         </div>
+                     </div></a>
+                     <a href="" targer="_self"><div class="linea" id="L8">
+                         <img src="../../Imagenes/8.png" id="ImgMetro" class="">
+                         
+                         <img src="../../Imagenes/8-2.png" id="ImgMetro" class="">
+                         <img src="../../Imagenes/8-1.png" id="ImgMetro" class="">
+                         <div id="textoM">
+                             <p id="line" style="text-align: center">Linea 8: <br/><br/><br/></p>
+                               <p style="text-align: center">  GARIBALDI - CONSTITUCIÓN DE 1917</p>
+                         </div>
+                     </div></a>
+                     <a href="" targer="_self"><div class="linea" id="L9">
+                         <img src="../../Imagenes/9.png" id="ImgMetro" class="">
+                         
+                         <img src="../../Imagenes/9-2.png" id="ImgMetro" class="">
+                         <img src="../../Imagenes/9-1.png" id="ImgMetro" class="">
+                         <div id="textoM" style="text-align: center">
+                             <p id="line">Linea 9: <br/><br/><br/></p>
+                              <p style="text-align: center">   PANTITLÁN - TACUBAYA</p>
+                         </div>
+                     </div></a>
+                     <a href="" targer="_self"><div class="linea" id="LA">
+                         <img src="../../Imagenes/A.png" id="ImgMetro" class="">
+                         
+                         <img src="../../Imagenes/A-1.png" id="ImgMetro" class="">
+                         <img src="../../Imagenes/A-2.png" id="ImgMetro" class="">
+                         <div id="textoM">
+                             <p id="line" style="text-align: center">Linea A: <br/><br/><br/></p>
+                            <p style="text-align: center">     PANTITLÁN - LA PAZ</p>
+                         </div>
+                     </div></a>
+                     <a href="" targer="_self"><div class="linea" id="LB">
+                         <img src="../../Imagenes/B.png" id="ImgMetro" class="">
+                         
+                         <img src="../../Imagenes/B-2.png" id="ImgMetro" class="">
+                         <img src="../../Imagenes/B-1.png" id="ImgMetro" class="">
+                         <div id="textoM">
+                             <p id="line" style="text-align: center">Linea B: <br/><br/><br/></p>
+                             <p style="text-align: center">    BUENAVISTA - CIUDAD AZTECA</p>
+                         </div>
+                     </div></a>
+                     <a href="" targer="_self"><div class="linea" id="L12">
+                         <img src="../../Imagenes/12.png" id="ImgMetro" class="">
+                         
+                         <img src="../../Imagenes/12-1.png" id="ImgMetro" class="">
+                         <img src="../../Imagenes/12-2.png" id="ImgMetro" class="">
+                         <div id="textoM">
+                             <p id="line" style="text-align: center">Linea 12: <br/><br/><br/></p>
+                            <p style="text-align: center">     MIXCOAC - TLÁHUAC</p>
+                         </div>
+                     </div></a>
+             </div> <br/>
+        <div id="wwm">
+         <A HREF="#Arriba">Subir</A>
+     </div>
+        </div>
+        
+         <footer class="redme">
+             <a href="#"><img src="../../Imagenes/fbbn.png" id="fb" class="red" onmouseover="this.src='../../Imagenes/fb.png'" onmouseout="this.src='../../Imagenes/fbbn.png'"></a>
+             <a href="#"><img src="../../Imagenes/twitb.png"  class="red" onmouseover="this.src='../../Imagenes/twit.png'" onmouseout="this.src='../../Imagenes/twitb.png'"></a>
+             <a href="#"><img src="../../Imagenes/instb.png"  class="red" onmouseover="this.src='../../Imagenes/inst.png'" onmouseout="this.src='../../Imagenes/instb.png'"></a>
+             <a href="#"><img src="../../Imagenes/ytb.png" class="red" onmouseover="this.src='../../Imagenes/yt.png'" onmouseout="this.src='../../Imagenes/ytb.png'"></a>
+             
+         </footer>
+	</body>
+</html>   
+
+
+

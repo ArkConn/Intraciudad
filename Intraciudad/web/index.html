@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Intraciudad</title>
+        <link rel="icon" type="image/jpg" href="Imagenes/favicon.ico">
+        <link rel="Stylesheet" href="CSS/CSS.css">        
+        <link rel="Stylesheet"  media="(min-width: 995px)" href="CSS/Barra.css">     
+        <link rel="Stylesheet"  media="(max-width: 995px)" href="CSS/BarraR.css">     
+        <link rel="stylesheet" type="text/css" href="CSS/barousel.css"/>
+        <link rel="stylesheet" type="text/css" href="CSS/estilocss.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+        <script type="text/javascript" src="JS/Fondo.js"></script>                   
+        <script src="JS/jquery.min.js" type="text/javascript"></script>
+        <script src="JS/jquery.barousel.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="JS/actions.js"></script>
+        <script type="text/javascript">$(document).ready(function(){$('#barousel_prevnextnav').barousel({navType:1});});</script>        
+    </head>
+    <body onload="adjust();" onresize="adjust()">       
+    <header>         
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html" target="_self">
+                        <span class="primero">
+                            <i class="icon icon-casita"></i>
+                        </span>
+                        Inicio
+                    </a>
+                </li>                
+                <li>
+                    <a>
+                        <span class="segundo">
+                            <i class="icon icon-metro-logo">                                
+                            </i>
+                        </span>Metro</a>
+                  
+                  <ul>
+                        <li><a href="HTML/STC/Mapa.html" target="_self">Mapa</a></li>                       
+                        <li><a href="HTML/STC/Lineas.html" target="_self" >Líneas</a></li>                       
+                        <li><a href="HTML/STC/Otros.html" target="_self">Otros Servicios</a></li>
+                        <li><a href="HTML/STC/Info.html" target="_self">Información</a></li> 
+                        <li><a href="http://www.metro.df.gob.mx/" target="_blank">Sitio</a></li>
+                    </ul>
+                </li>
+                <li><a><span class="tercero"><i class="icon icon-Metrobus_Mexico"></i></span>Metrobus</a>
+                     <ul>
+                        <li><a href="HTML/MB/Mapa.html" target="_self">Mapa de la red</a></li>
+                        <li><a href="HTML/MB/Linea1.html" target="_self">Línea 1</a></li>
+                        <li><a href="HTML/MB/Linea2.html" target="_self">Línea 2</a></li>
+                        <li><a href="HTML/MB/Linea3.html" target="_self">Línea 3</a></li>
+                        <li><a href="HTML/MB/Linea4.html" target="_self">Línea 4</a></li>
+                        <li><a href="HTML/MB/Linea5.html" target="_self">Línea 5</a></li>
+                        <li><a href="HTML/MB/Info.html" target="_self">Información</a></li>
+                        <li><a href="http://www.metrobus.df.gob.mx/" target="_blank">Sitio</a></li> 
+                     </ul>
+                </li>
+                <li><a ><span class="cuarto"><i class="icon icon-STE_logo"></i></span>Tren Ligero</a>
+                    <ul>
+                        <li><a href="HTML/STE/Linea.html" target="_self">Línea 1</a></li>                       
+                        <li><a href="HTML/STE/Info.html" target="_self">Información</a></li>
+                        <li><a href="http://www.ste.df.gob.mx/index.html?page=1&content=3" target="_blank">Sitio</a></li> 
+                    </ul>
+                </li>
+                <li>
+                    <a ><span class="quinto"><i class="icon icon-logosuburbano"></i></span>Tren Suburbano</a>
+                    <ul>                        
+                        <li><a href="HTML/TS/Linea.html" target="_self">Línea 1</a></li>
+                        <li><a href="HTML/TS/Info.html" target="_self">Información</a></li>
+                        <li><a href="http://www.fsuburbanos.com/" target="_blank">Sitio</a></li> 
+                    </ul>
+                </li>
+                <li>
+                    <a ><span class="sexto"><i class="icon icon-cero_emisiones"></i></span>Cero Emisiones</a>
+                    <ul>                        
+                        <li><a href="HTML/Trole/Linea.html" target="_self">Líneas</a></li>
+                        <li><a href="HTML/Trole/Info.html" target="_self">Información</a></li>
+                        <li><a href="http://www.ste.df.gob.mx/index.html?page=1&content=2" target="_blank">Sitio</a></li> 
+                    </ul>
+                </li>
+                <li>
+                    <a ><span class="siete"><i class="icon icon-Where-Is-My-Car-logo-on-mevvy"></i></span>Corredor</a>
+                    <ul>                        
+                        <li><a href="HTML/Corr/Ruta1.html" target="_self">Ruta 1</a></li>
+                        <li><a href="HTML/Corr/Ruta2.html" target="_self">Ruta 2</a></li>
+                        <li><a href="HTML/Corr/Ruta3.html" target="_self">Ruta 3</a></li>
+                    </ul>
+                </li>   
+                <li>
+                    <a ><span class="ocho"><i class="icon icon-edificio"></i></span>CETRAM</a>
+                    <ul>                        
+                        <li><a href="HTML/CET/Linea.html" target="_self">Mapa de CETRAM</a></li>
+                        <li><a href="HTML/CET/Info.html"  target="_self">Información</a></li>
+                        <li><a href="http://www.cetram.df.gob.mx/" target="_blank">Sitio</a></li> 
+                    </ul>
+                </li>
+                <li>
+                    <a ><span class="nueve"><i class="icon icon-cog-cogwheel-gear-zahnrad-hi"></i></span>Más servicios</a>
+                    <ul>                        
+                        <li><a href="HTML/Eco/Linea.html" target="_self">Ecobici</a></li>
+                        <li><a href="HTML/Otros/Reporte.html" target="_self">Reporte de Tránsito</a></li>                        
+                        <li><a href="HTML/Otros/Linea.html" target="_self">Lugares Concurridos</a></li>
+                        <li><a href="HTML/Otros/Manual.html" target="_self">Manual</a></li>
+                        <li><a href="HTML/Otros/Ask.html" target="_self">Preguntas Frecuentes</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>              
+         <img src="Imagenes/IC -HD.jpg" id="fondo" /><A NAME="Arriba"></A>
+         
+        <div id="MenuBar">				
+			<a href="HTML/Opciones/Metro.html" target="_self"><div class="option">
+				Metro
+			</div></a>
+            <a href="HTML/Opciones/Metrobus.html" target="_self"><div class="option">
+				Metrobus
+			</div></a>
+            <a href="HTML/Opciones/TL.html" target="_self"><div class="option">
+				Tren Ligero
+			</div></a>
+            <a href="HTML/Opciones/TS.html" target="_self"><div class="option">
+				Tren Suburbano
+			</div></a>
+            <a href="HTML/Opciones/Cero.html" target="_self"><div class="option">
+				Cero Emisiones
+			</div></a>
+            <a href="HTML/Opciones/Run.html" target="_self"><div class="option">
+				Corredor
+			</div></a>
+            <a href="HTML/Opciones/CET.html" target="_self"><div class="option">
+				CETRAM
+			</div></a>
+            <a href="HTML/Opciones/Mas.html" target="_self"><div class="option">
+				Más
+			</div></a>                        
+		</div>
+ 
+        
+   
+         
+         
+        
+         <div id="lol">    
+                    <div id="NavigationBar">
+				<div id="icon">
+					<input type="button" value="j" id="iconButton" onclick="sMenu()">
+				</div>
+				<div id="title">			
+					<h1>Inicio</h1>
+				</div>
+			</div>
+             
+             
+             <div class="center" id="ww">                                 
+                 <h2><br/><p align="center" style="width: 110.5%">Ciudad de México</p></h2>
+                 <div id="adj">
+                          <div id="cont_a9a924699489be285aa30b994da2ae0a">
+  <span id="h_a9a924699489be285aa30b994da2ae0a"></span>
+  <script type="text/javascript" src="http://www.meteored.mx/wid_loader/a9a924699489be285aa30b994da2ae0a"></script>
+</div>
+                 </div>                                     
+                 <div id="adj2">
+                    <div style="text-align:center;width:450px;padding:0.3em 0;" id="ddd"> 
+                        <h2>
+                            <a style="text-decoration:none;" href="http://www.zeitverschiebung.net/es/city/3530597">
+                                <span style="color:gray;"></span>
+                            </a>
+                        </h2> 
+                        <iframe src="http://www.zeitverschiebung.net/clock-widget-iframe?language=es&timezone=America%2FMexico_City" width="100%" height="130" frameborder="0" seamless></iframe> <small style="color:gray;"></small> </div>
+                 </div>                  
+             </div>   
+            
+    <br/>
+
+            <div id="carr">
+       <div id="barousel_prevnextnav" class="barousel" style=" alignment-adjust: central">
+                <div class="barousel_image" id="barousel_image">
+                    <img src="Img/ArkConn.jpg" alt="" class="default" id="imgg"/>
+                    <img src="Img/IC.jpg" alt="" id="imgg"/>
+                    <img src="Img/l.jpg" alt="" id="imgg"/>
+                    <img src="Img/l2.jpg" alt="" id="imgg"/>
+                    <img src="Img/otep.jpg" alt="" id="imgg"/>
+                    <img src="Img/Sin título.png" alt="" id="imgg"/>
+                    <img src="Img/Sin título1.png" alt="" id="imgg"/>
+                </div>
+
+                <div class="barousel_content" id="barousel_content">
+                    <div class="default">
+                        <p class="header">ARKCONN</p>
+                        <p>Conócenos</p>
+                        <a href="HTML/Arkconn.html" target="_blank">Leer más</a>
+                    </div>
+                    <div>
+                        <p class="header">INTRACIUDAD</p>
+                        <p>Conoce más del servicio exclusivo de Intraciudad</p>
+						<a href="">Leer más</a>
+                    </div>
+                    
+                    <div>
+                        <p class="header">Sensualidad</p>
+                        <p>Smash es precioso :3</p>
+						<a href="">Leer más</a>
+                    </div>
+                    
+		    <div>
+                        <p class="header">Moy</p>
+                        <p>Moy Moy Moy Moy</p>
+						<a href="">Leer más</a>
+                    </div>
+                    
+                    <div>
+                        <p class="header">Smash</p>
+                        <p>Y así estuvo Maku con su Smash</p>
+						<a href="">Leer más</a>
+                    </div>
+                    
+                    <div>
+                        <p class="header">Foto Histórica</p>
+                        <p>Wolf <3</p>
+						<a href="">Leer más</a>
+                    </div>
+                    
+		    <div>
+                        <p class="header">Krystal</p>
+                        <p>A quién injustamente no se incluyó</p>
+						<a href="">Leer más</a>
+                    </div>
+                </div>
+                <div class="barousel_nav">                    
+                </div>
+            </div>
+      </div>   
+            <br>
+     <div id="www">
+       <div  style=" display: block; width: 75%;">
+            <a class="twitter-timeline"  href="https://twitter.com/CDMX_Semovi" data-widget-id="555211667026759680">Tweets por el @CDMX_Semovi.</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>                    
+       </div>
+     </div><br>
+     <div id="ww"><br/>
+         <A HREF="#Arriba"><button>Subir</button></A> 
+         <br/><br/>
+     </div>
+    
+        </div>
+        
+         <footer>
+             <a href="#"><img src="Imagenes/fbbn.png" id="fb" class="red" onmouseover="this.src='Imagenes/fb.png'" onmouseout="this.src='Imagenes/fbbn.png'"></a>
+             <a href="#"><img src="Imagenes/twitb.png"  class="red" onmouseover="this.src='Imagenes/twit.png'" onmouseout="this.src='Imagenes/twitb.png'"></a>
+             <a href="#"><img src="Imagenes/instb.png"  class="red" onmouseover="this.src='Imagenes/inst.png'" onmouseout="this.src='Imagenes/instb.png'"></a>
+             <a href="#"><img src="Imagenes/ytb.png" class="red" onmouseover="this.src='Imagenes/yt.png'" onmouseout="this.src='Imagenes/ytb.png'"></a>
+             
+         </footer>
+	</body>
+</html>   
+
+
